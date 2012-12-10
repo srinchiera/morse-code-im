@@ -9,41 +9,41 @@ NET "button_right"  LOC = "F6";
 NET "button_center" LOC = "F5"; 
 
 # PMOD Connector
-NET "JB[0]"  LOC = "T3"; # Bank = 2,  Pin name = IO_L62N_D6,     Sch name = JA-D0_N
-NET "JB[1]"  LOC = "R3"; # Bank = 2,  Pin name = IO_L62P_D5,     Sch name = JA-D0_P
-NET "JB[2]"  LOC = "P6"; # Bank = 2,  Pin name = IO_L64N_D9,     Sch name = JA-D2_N
-NET "JB[3]"  LOC = "N5"; # Bank = 2,  Pin name = IO_L64P_D8,     Sch name = JA-D2_P
-NET "JB[4]"  LOC = "V9"; # Bank = 2,  Pin name = IO_L32N_GCLK28, Sch name = JA-CLK_N
-NET "JB[5]"  LOC = "T9"; # Bank = 2,  Pin name = IO_L32P_GCLK29, Sch name = JA-CLK_P
-NET "JB[6]"  LOC = "V4"; # Bank = 2,  Pin name = IO_L63N,        Sch name = JA-D1_N
-NET "JB[7]"  LOC = "T4"; # Bank = 2,  Pin name = IO_L63P,        Sch name = JA-D1_P
+NET "TX"     LOC = "T3"; # Bank = 2,  Pin name = IO_L62N_D6,     Sch name = JA-D0_N
+NET "RX"     LOC = "R3"; # Bank = 2,  Pin name = IO_L62P_D5,     Sch name = JA-D0_P
+NET "JB[0]"  LOC = "P6"; # Bank = 2,  Pin name = IO_L64N_D9,     Sch name = JA-D2_N
+NET "JB[1]"  LOC = "N5"; # Bank = 2,  Pin name = IO_L64P_D8,     Sch name = JA-D2_P
+NET "JB[2]"  LOC = "V9"; # Bank = 2,  Pin name = IO_L32N_GCLK28, Sch name = JA-CLK_N
+NET "JB[3]"  LOC = "T9"; # Bank = 2,  Pin name = IO_L32P_GCLK29, Sch name = JA-CLK_P
+NET "JB[4]"  LOC = "V4"; # Bank = 2,  Pin name = IO_L63N,        Sch name = JA-D1_N
+NET "JB[5]"  LOC = "T4"; # Bank = 2,  Pin name = IO_L63P,        Sch name = JA-D1_P
 
+NET "TX"    IOSTANDARD = LVCMOS33;
+NET "RX"    IOSTANDARD = LVCMOS33;
 NET "JB[0]" IOSTANDARD = LVCMOS33;
 NET "JB[1]" IOSTANDARD = LVCMOS33;
 NET "JB[2]" IOSTANDARD = LVCMOS33;
 NET "JB[3]" IOSTANDARD = LVCMOS33;
 NET "JB[4]" IOSTANDARD = LVCMOS33;
 NET "JB[5]" IOSTANDARD = LVCMOS33;
-NET "JB[6]" IOSTANDARD = LVCMOS33;
-NET "JB[7]" IOSTANDARD = LVCMOS33;
 
+NET "TX"    DRIVE = 12;
+NET "RX"    DRIVE = 12;
 NET "JB[0]" DRIVE = 12;
 NET "JB[1]" DRIVE = 12;
 NET "JB[2]" DRIVE = 12;
 NET "JB[3]" DRIVE = 12;
 NET "JB[4]" DRIVE = 12;
 NET "JB[5]" DRIVE = 12;
-NET "JB[6]" DRIVE = 12;
-NET "JB[7]" DRIVE = 12;
 
+NET "TX"    SLEW = FAST;
+NET "RX"    SLEW = FAST;
 NET "JB[0]" SLEW = FAST;
 NET "JB[1]" SLEW = FAST;
 NET "JB[2]" SLEW = FAST;
 NET "JB[3]" SLEW = FAST;
 NET "JB[4]" SLEW = FAST;
 NET "JB[5]" SLEW = FAST;
-NET "JB[6]" SLEW = FAST;
-NET "JB[7]" SLEW = FAST;
 
 NET "switch[0]" LOC = A10;
 NET "switch[1]" LOC = D14;

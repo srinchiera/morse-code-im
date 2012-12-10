@@ -1,16 +1,16 @@
 Release 13.2 - xst O.61xd (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Documents and Settings/student/Desktop/final/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Documents and Settings/student/Desktop/visual2/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.15 secs
  
---> Parameter xsthdpdir set to C:/Documents and Settings/student/Desktop/final/xst
+--> Parameter xsthdpdir set to C:/Documents and Settings/student/Desktop/visual2/xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: touchpad_controller.prj
 
@@ -39,16 +39,16 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\final\averager.v\" into library work
+Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\visual2\averager.v\" into library work
 Parsing module <averager>.
-Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\final\touchpad_controller.v\" into library work
+Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\visual2\touchpad_controller.v\" into library work
 Parsing module <touchpad_controller>.
-Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\final\ipcore_dir\clock_generator\example_design\clock_generator_exdes.v\" into library work
+Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\visual2\ipcore_dir\clock_generator\example_design\clock_generator_exdes.v\" into library work
 Parsing module <clock_generator_exdes>.
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.41 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.54 secs
  
 --> 
 

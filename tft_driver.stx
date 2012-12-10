@@ -1,16 +1,16 @@
 Release 13.2 - xst O.61xd (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Documents and Settings/student/Desktop/final/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Documents and Settings/student/Desktop/visual2/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.16 secs
  
---> Parameter xsthdpdir set to C:/Documents and Settings/student/Desktop/final/xst
+--> Parameter xsthdpdir set to C:/Documents and Settings/student/Desktop/visual2/xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: tft_driver.prj
 
@@ -39,14 +39,16 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\final\tft_driver.v\" into library work
+Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\visual2\pwm.v\" into library work
+Parsing module <pwm_module>.
+Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\visual2\tft_driver.v\" into library work
 Parsing module <tft_driver>.
-Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\final\ipcore_dir\clock_generator\example_design\clock_generator_exdes.v\" into library work
+Analyzing Verilog file \"C:\Documents and Settings\student\Desktop\visual2\ipcore_dir\clock_generator\example_design\clock_generator_exdes.v\" into library work
 Parsing module <clock_generator_exdes>.
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.84 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.21 secs
  
 --> 
 

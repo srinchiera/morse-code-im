@@ -35,9 +35,10 @@ Setup/Hold to clock unbuf_clk
               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source        | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 --------------+------------+------------+------------+------------+------------------+--------+
-rstb          |    9.240(R)|      SLOW  |   -2.144(R)|      FAST  |cclk              |   0.000|
-              |    9.785(R)|      SLOW  |   -0.401(R)|      FAST  |tft_clk_buf       |   0.000|
-touch_data_out|    7.096(R)|      SLOW  |   -2.750(R)|      FAST  |cclk              |   0.000|
+RX            |   10.507(R)|      SLOW  |   -2.675(R)|      FAST  |cclk              |   0.000|
+rstb          |   16.862(R)|      SLOW  |   -1.663(R)|      FAST  |cclk              |   0.000|
+              |   10.028(R)|      SLOW  |   -0.401(R)|      FAST  |tft_clk_buf       |   0.000|
+touch_data_out|    7.879(R)|      SLOW  |   -2.824(R)|      FAST  |cclk              |   0.000|
 --------------+------------+------------+------------+------------+------------------+--------+
 
 Clock unbuf_clk to Pad
@@ -45,38 +46,69 @@ Clock unbuf_clk to Pad
              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
-tft_backlight|        13.091(R)|      SLOW  |         4.646(R)|      FAST  |cclk              |   0.000|
-tft_blue<0>  |         6.751(R)|      SLOW  |         2.715(R)|      FAST  |cclk              |   0.000|
-tft_blue<1>  |         6.461(R)|      SLOW  |         2.526(R)|      FAST  |cclk              |   0.000|
-tft_blue<2>  |         7.035(R)|      SLOW  |         2.898(R)|      FAST  |cclk              |   0.000|
-tft_blue<3>  |         6.774(R)|      SLOW  |         2.716(R)|      FAST  |cclk              |   0.000|
-tft_blue<4>  |         7.446(R)|      SLOW  |         3.155(R)|      FAST  |cclk              |   0.000|
-tft_blue<5>  |         7.699(R)|      SLOW  |         3.300(R)|      FAST  |cclk              |   0.000|
-tft_blue<6>  |         7.671(R)|      SLOW  |         3.272(R)|      FAST  |cclk              |   0.000|
-tft_blue<7>  |         7.065(R)|      SLOW  |         2.901(R)|      FAST  |cclk              |   0.000|
+TX           |         8.371(R)|      SLOW  |         3.768(R)|      FAST  |cclk              |   0.000|
+led<0>       |         8.283(R)|      SLOW  |         3.816(R)|      FAST  |cclk              |   0.000|
+led<1>       |         8.314(R)|      SLOW  |         3.824(R)|      FAST  |cclk              |   0.000|
+led<2>       |         8.295(R)|      SLOW  |         3.819(R)|      FAST  |cclk              |   0.000|
+led<3>       |         7.800(R)|      SLOW  |         3.567(R)|      FAST  |cclk              |   0.000|
+led<4>       |         7.635(R)|      SLOW  |         3.487(R)|      FAST  |cclk              |   0.000|
+led<5>       |        15.718(R)|      SLOW  |         8.175(R)|      FAST  |cclk              |   0.000|
+tft_backlight|        13.920(R)|      SLOW  |         4.364(R)|      FAST  |cclk              |   0.000|
+tft_blue<0>  |        16.463(R)|      SLOW  |         3.098(R)|      FAST  |cclk              |   0.000|
+             |        20.983(R)|      SLOW  |         5.332(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<1>  |        16.638(R)|      SLOW  |         3.168(R)|      FAST  |cclk              |   0.000|
+             |        20.477(R)|      SLOW  |         5.264(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<2>  |        16.427(R)|      SLOW  |         3.192(R)|      FAST  |cclk              |   0.000|
+             |        20.941(R)|      SLOW  |         5.331(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<3>  |        16.249(R)|      SLOW  |         3.319(R)|      FAST  |cclk              |   0.000|
+             |        20.381(R)|      SLOW  |         5.326(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<4>  |        16.744(R)|      SLOW  |         2.817(R)|      FAST  |cclk              |   0.000|
+             |        21.062(R)|      SLOW  |         5.728(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<5>  |        17.140(R)|      SLOW  |         2.953(R)|      FAST  |cclk              |   0.000|
+             |        21.595(R)|      SLOW  |         5.832(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<6>  |        17.167(R)|      SLOW  |         2.768(R)|      FAST  |cclk              |   0.000|
+             |        21.374(R)|      SLOW  |         5.563(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_blue<7>  |        16.986(R)|      SLOW  |         2.625(R)|      FAST  |cclk              |   0.000|
+             |        21.502(R)|      SLOW  |         5.639(R)|      FAST  |tft_clk_buf       |   0.000|
 tft_clk      |         5.427(R)|      SLOW  |         1.936(R)|      FAST  |tft_clk_buf       |   0.000|
              |         5.365(R)|      SLOW  |         1.870(R)|      FAST  |tft_clk_buf_n     |   0.000|
-tft_data_ena |        11.541(R)|      SLOW  |         3.647(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_data_ena |        11.914(R)|      SLOW  |         4.083(R)|      FAST  |tft_clk_buf       |   0.000|
 tft_display  |         5.370(R)|      SLOW  |         1.874(R)|      FAST  |tft_clk_buf       |   0.000|
-tft_green<0> |         7.386(R)|      SLOW  |         3.129(R)|      FAST  |cclk              |   0.000|
-tft_green<1> |         7.141(R)|      SLOW  |         3.002(R)|      FAST  |cclk              |   0.000|
-tft_green<2> |         7.570(R)|      SLOW  |         3.227(R)|      FAST  |cclk              |   0.000|
-tft_green<3> |         7.176(R)|      SLOW  |         3.015(R)|      FAST  |cclk              |   0.000|
-tft_green<4> |         6.900(R)|      SLOW  |         2.820(R)|      FAST  |cclk              |   0.000|
-tft_green<5> |         6.490(R)|      SLOW  |         2.562(R)|      FAST  |cclk              |   0.000|
-tft_green<6> |         6.629(R)|      SLOW  |         2.615(R)|      FAST  |cclk              |   0.000|
-tft_green<7> |         6.325(R)|      SLOW  |         2.476(R)|      FAST  |cclk              |   0.000|
-tft_red<0>   |         7.490(R)|      SLOW  |         3.177(R)|      FAST  |cclk              |   0.000|
-tft_red<1>   |         7.082(R)|      SLOW  |         2.942(R)|      FAST  |cclk              |   0.000|
-tft_red<2>   |         7.265(R)|      SLOW  |         3.023(R)|      FAST  |cclk              |   0.000|
-tft_red<3>   |         7.215(R)|      SLOW  |         2.989(R)|      FAST  |cclk              |   0.000|
-tft_red<4>   |         7.081(R)|      SLOW  |         2.940(R)|      FAST  |cclk              |   0.000|
-tft_red<5>   |         7.491(R)|      SLOW  |         3.198(R)|      FAST  |cclk              |   0.000|
-tft_red<6>   |         6.751(R)|      SLOW  |         2.757(R)|      FAST  |cclk              |   0.000|
-tft_red<7>   |         6.896(R)|      SLOW  |         2.870(R)|      FAST  |cclk              |   0.000|
+tft_green<0> |        14.921(R)|      SLOW  |         3.603(R)|      FAST  |cclk              |   0.000|
+             |        20.277(R)|      SLOW  |         4.832(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<1> |        15.613(R)|      SLOW  |         3.304(R)|      FAST  |cclk              |   0.000|
+             |        19.868(R)|      SLOW  |         4.989(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<2> |        15.758(R)|      SLOW  |         3.229(R)|      FAST  |cclk              |   0.000|
+             |        20.030(R)|      SLOW  |         5.198(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<3> |        15.589(R)|      SLOW  |         3.642(R)|      FAST  |cclk              |   0.000|
+             |        20.049(R)|      SLOW  |         4.989(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<4> |        16.208(R)|      SLOW  |         3.295(R)|      FAST  |cclk              |   0.000|
+             |        20.562(R)|      SLOW  |         5.068(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<5> |        15.840(R)|      SLOW  |         3.497(R)|      FAST  |cclk              |   0.000|
+             |        19.969(R)|      SLOW  |         4.987(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<6> |        15.923(R)|      SLOW  |         3.217(R)|      FAST  |cclk              |   0.000|
+             |        20.047(R)|      SLOW  |         5.021(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_green<7> |        16.231(R)|      SLOW  |         3.020(R)|      FAST  |cclk              |   0.000|
+             |        20.263(R)|      SLOW  |         5.167(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<0>   |        15.331(R)|      SLOW  |         3.466(R)|      FAST  |cclk              |   0.000|
+             |        20.565(R)|      SLOW  |         5.054(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<1>   |        15.148(R)|      SLOW  |         3.543(R)|      FAST  |cclk              |   0.000|
+             |        20.347(R)|      SLOW  |         5.044(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<2>   |        15.735(R)|      SLOW  |         3.462(R)|      FAST  |cclk              |   0.000|
+             |        20.430(R)|      SLOW  |         4.873(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<3>   |        15.095(R)|      SLOW  |         3.390(R)|      FAST  |cclk              |   0.000|
+             |        20.391(R)|      SLOW  |         4.895(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<4>   |        15.955(R)|      SLOW  |         3.140(R)|      FAST  |cclk              |   0.000|
+             |        19.775(R)|      SLOW  |         4.960(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<5>   |        15.855(R)|      SLOW  |         3.557(R)|      FAST  |cclk              |   0.000|
+             |        20.268(R)|      SLOW  |         5.311(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<6>   |        15.595(R)|      SLOW  |         3.416(R)|      FAST  |cclk              |   0.000|
+             |        19.442(R)|      SLOW  |         4.855(R)|      FAST  |tft_clk_buf       |   0.000|
+tft_red<7>   |        15.787(R)|      SLOW  |         3.931(R)|      FAST  |cclk              |   0.000|
+             |        19.939(R)|      SLOW  |         5.133(R)|      FAST  |tft_clk_buf       |   0.000|
 tft_vdd      |        10.111(R)|      SLOW  |         4.346(R)|      FAST  |tft_clk_buf       |   0.000|
-touch_clk    |         7.947(R)|      SLOW  |         3.374(R)|      FAST  |cclk              |   0.000|
-touch_data_in|         7.978(R)|      SLOW  |         3.331(R)|      FAST  |cclk              |   0.000|
+touch_clk    |         9.138(R)|      SLOW  |         4.098(R)|      FAST  |cclk              |   0.000|
+touch_data_in|         7.429(R)|      SLOW  |         3.040(R)|      FAST  |cclk              |   0.000|
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock unbuf_clk
@@ -84,32 +116,32 @@ Clock to Setup on destination clock unbuf_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-unbuf_clk      |    4.884|         |         |         |
+unbuf_clk      |   12.107|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-switch<0>      |tft_backlight  |   20.232|
-switch<1>      |tft_backlight  |   20.821|
-switch<2>      |tft_backlight  |   20.718|
-switch<3>      |tft_backlight  |   15.763|
-switch<4>      |tft_backlight  |   13.978|
-switch<5>      |tft_backlight  |   15.076|
-switch<6>      |tft_backlight  |   14.298|
-switch<7>      |tft_backlight  |   16.877|
+switch<0>      |tft_backlight  |   19.817|
+switch<1>      |tft_backlight  |   20.101|
+switch<2>      |tft_backlight  |   20.106|
+switch<3>      |tft_backlight  |   17.441|
+switch<4>      |tft_backlight  |   15.151|
+switch<5>      |tft_backlight  |   15.737|
+switch<6>      |tft_backlight  |   15.118|
+switch<7>      |tft_backlight  |   16.587|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Dec 09 23:07:31 2012 
+Analysis completed Mon Dec 10 10:14:38 2012 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 167 MB
+Peak Memory Usage: 188 MB
 
 
 

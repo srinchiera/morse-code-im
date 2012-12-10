@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-12-09T19:12:16</DateModified>
+  <DateModified>2012-12-10T08:17:05</DateModified>
   <ModuleName>main</ModuleName>
-  <SummaryTimeStamp>2012-12-09T19:10:36</SummaryTimeStamp>
-  <SavedFilePath>C:/Documents and Settings/student/Desktop/final/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Documents and Settings/student/Desktop/final\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2012-12-10T08:16:10</SummaryTimeStamp>
+  <SavedFilePath>C:/Documents and Settings/student/Desktop/lat3-submission/visual2test/visual2/iseconfig/main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Documents and Settings/student/Desktop/lat3-submission/visual2test/visual2\</ImplementationReportsDirectory>
   <DateInitialized>2012-05-09T13:02:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
