@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Documents and Settings/student/Desktop/final/test_morse_decoder_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_morse_decoder" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/test_morse_decoder/red" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">red[7:0]</obj_property>
+      <obj_property name="ObjectShortName">red[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[7:0]</obj_property>
+      <obj_property name="ObjectShortName">green[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/blue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blue[7:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/cclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cclk</obj_property>
+      <obj_property name="ObjectShortName">cclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/rstb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/tap" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tap</obj_property>
+      <obj_property name="ObjectShortName">tap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/space" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">space</obj_property>
+      <obj_property name="ObjectShortName">space</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/send" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">send</obj_property>
+      <obj_property name="ObjectShortName">send</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/uut/dot" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dot</obj_property>
+      <obj_property name="ObjectShortName">dot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/uut/dash" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dash</obj_property>
+      <obj_property name="ObjectShortName">dash</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_morse_decoder/uut/touch_cycles" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">touch_cycles[30:0]</obj_property>
+      <obj_property name="ObjectShortName">touch_cycles[30:0]</obj_property>
+   </wvobject>
+</wave_config>

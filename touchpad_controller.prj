@@ -1,0 +1,3 @@
+verilog work "averager.v"
+verilog work "touchpad_controller.v"
+verilog work "ipcore_dir/clock_generator/example_design/clock_generator_exdes.v"

@@ -1,0 +1,3 @@
+verilog work "morse_decoder.v"
+verilog work "test_morse_decoder.v"
+verilog work "C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v"
